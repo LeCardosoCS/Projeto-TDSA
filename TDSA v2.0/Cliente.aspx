@@ -63,8 +63,8 @@
                 <td class="auto-style3">:</td>
                 <td>
                     <asp:RadioButtonList ID="RadioButtonList1" runat="server" Width="225px">
-                        <asp:ListItem Selected="true">Ativo</asp:ListItem>
-                        <asp:ListItem>Inativo</asp:ListItem>
+                        <asp:ListItem Selected="true" Value="Ativo">Ativo</asp:ListItem>
+                        <asp:ListItem Value="Inativo">Inativo</asp:ListItem>
                     </asp:RadioButtonList>
                 </td>
             </tr>

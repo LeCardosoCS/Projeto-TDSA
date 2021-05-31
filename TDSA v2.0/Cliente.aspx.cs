@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
 
+//PL = Presentation Layer
 namespace TDSA_v2._0
 {
     public partial class Cliente : System.Web.UI.Page

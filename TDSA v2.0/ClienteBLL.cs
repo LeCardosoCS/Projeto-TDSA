@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Data;
 
+//BLL = Business Logic Layer
 namespace TDSA_v2._0
 {
     public class ClienteBLL
