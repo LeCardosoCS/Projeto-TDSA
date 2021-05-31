@@ -5,7 +5,7 @@ using System.Web;
 using System.Data;
 using MySql.Data.MySqlClient;
 
-
+//DAL = Data Access Layer
 
 public class DAL
 {

@@ -28,7 +28,9 @@ namespace TDSA_v2._0
         protected void Cadastrar_Click(object sender, EventArgs e)
         {
             objCliente.Nome = TextNome.Text;
-            objCliente.Data_Nascimento = Convert.ToDateTime(TextNasc.Text);
+            objCliente.Data_Nascimento = TextNasc.Text;
+            objCliente.Situacao = RadioButtonList1.SelectedItem.Text;
+            objCliente.ID = intID.Text;
 
             if (String.IsNullOrEmpty(intID.Text))
             {
@@ -44,10 +46,11 @@ namespace TDSA_v2._0
 
         protected void Carregar_Click(object sender, EventArgs e)
         {
-            DataTable data = objCliente.CarregarClientePorID(intID.Text);
+            DataTable data = objCliente.CarregarCliente(intID.Text);
             intID.Text = data.Rows[0]["CLI_ID"].ToString();
             TextNome.Text = data.Rows[0]["CLI_NOME"].ToString();
             TextNasc.Text = data.Rows[0]["CLI_DATANASCIMENTO"].ToString();
+            RadioButtonList1.SelectedItem.Text = data.Rows[0]["CLI_ATIVO"].ToString();
         }
 
         protected void Excluir_Click(object sender, EventArgs e)

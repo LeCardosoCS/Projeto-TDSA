@@ -26,6 +26,10 @@
         .auto-style6 {
             text-align: center;
         }
+        .auto-style7 {
+            height: 26px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -33,7 +37,7 @@
     <form id="form1" runat="server">
         <table align="center">
             <tr>
-                <td class="auto-style1">Id</td>
+                <td class="auto-style1">ID</td>
                 <td class="auto-style3">:</td>
                 <td>
                     <asp:TextBox ID="intID" runat="server"  Width="48px"></asp:TextBox>
@@ -59,7 +63,7 @@
                 <td class="auto-style3">:</td>
                 <td>
                     <asp:RadioButtonList ID="RadioButtonList1" runat="server" Width="225px">
-                        <asp:ListItem Selected="True">Ativo</asp:ListItem>
+                        <asp:ListItem Selected="true">Ativo</asp:ListItem>
                         <asp:ListItem>Inativo</asp:ListItem>
                     </asp:RadioButtonList>
                 </td>
@@ -75,8 +79,8 @@
             </tr>
         </table>
         <div class="auto-style6">
-            <div>
-            </div>
+            <div class="auto-style7">
+                Para carregar os dados, faça a consulta a partir do ID.</div>
             <asp:GridView ID="gridClientes" runat="server" HorizontalAlign="Center" Width="306px" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Vertical" Height="243px">
                 <AlternatingRowStyle BackColor="White" />
                 <FooterStyle BackColor="#CCCC99" />
